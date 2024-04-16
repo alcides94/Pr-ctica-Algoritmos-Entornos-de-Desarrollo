@@ -5,9 +5,10 @@ public abstract class Algoritmos {
 	/**
 	 * Devuelve el número de fibonacci de dicho número
 	 * 
-	 * @param 	el numero del que queremos calcular fibonacci
-	 * @return	el fibonacci del numero especificado
+	 * @param numero	el numero del que queremos calcular fibonacci
+	 * @return			el fibonacci del numero especificado
 	 */
+	
 	
 	public static int fibonacci (int numero){
 		
@@ -52,6 +53,37 @@ public abstract class Algoritmos {
 		}
 		
 		return fact;
+	}
+	
+	/**
+	 * Devuelve true o false en función de si es primo o no.
+	 * 
+	 * @param numero	el numero del que queremos calcular si es primo
+	 * @return			el true o false en función de si es primo o no.
+	 */
+	
+	public static boolean esPrimo (int numero) {
+		
+		boolean primo=false;
+		
+		if (numero <= 0) {
+			return primo;
+		}
+		else if(numero == 1) {
+			
+			return primo;
+		}else {
+			for (int i=2; i<numero; i++) {
+				if	(numero / 2==0) {
+					return primo;
+				}
+				
+			}
+			return primo =true;
+			
+		}
+		
+		
 	}
 	
 }
